@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Flexbox Playplace</title>
+  </head>
+  <body>
+    <header>
+      <h1>Flexbox Playplace</h1>
+    </header>
+
+    <form action="#" method="post">
+      <label for="htmlbox">HTML goes here</label>
+      <textarea name="htmlbox" id="htmlbox" cols="30" rows="10"></textarea>
+      <label for="cssbox">CSS goes here</label>
+      <textarea name="cssbox" id="cssbox" cols="30" rows="10"></textarea>
+      <input type="submit" value="Update" />
+    </form>
+
+    <main class="demo-pane">
+      <div class="flex-container">
+        <div class="flex-element">1</div>
+        <div class="flex-element">2</div>
+        <div class="flex-element">3</div>
+        <div class="flex-element">4</div>
+        <div class="flex-element">5</div>
+        <div class="flex-element">6</div>
+        <div class="flex-element">7</div>
+        <div class="flex-element">8</div>
+        <div class="flex-element">9</div>
+        <div class="flex-element">10</div>
+      </div>
+    </main>
+
+    <form action="" method="post">
+      <fieldset>
+        <legend>Dimensions</legend>
+        <label for="height">Height: <input type="number" name="height" id="height" min="0" /> </label>
+        <label for="width">Width: <input type="number" name="width" id="width" min="0" /> </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Container properties</legend>
+
+        <ul class="option-list">
+          <li class="shorthand">
+            flex-flow:
+            <ul class="option-list">
+              <li>
+                flex-direction:
+                <label for="row">
+                  <input type="radio" name="flex-direction" id="flex-direction_row" value="row" value="row" checked />
+                  row
+                </label>
+                <label for="row-reverse">
+                  <input
+                    type="radio"
+                    name="flex-direction"
+                    id="flex-direction_row-reverse"
+                    value="row-reverse"
+                    value="row-reverse"
+                  />
+                  row-reverse
+                </label>
+                <label for="column">
+                  <input type="radio" name="flex-direction" id="flex-direction_column" value="column" />
+                  column
+                </label>
+                <label for="column-reverse">
+                  <input type="radio" name="flex-direction" id="flex-direction_column-reverse" value="column-reverse" />
+                  column-reverse
+                </label>
+              </li>
+
+              <li>
+                flex-wrap:
+                <label>
+                  <input type="radio" name="flex-wrap" id="flex-wrap_nowrap" value="nowrap" checked />
+                  nowrap
+                </label>
+                <label>
+                  <input type="radio" name="flex-wrap" id="flex-wrap_wrap" value="wrap" />
+                  wrap
+                </label>
+                <label>
+                  <input type="radio" name="flex-wrap" id="flex-wrap_wrap-reverse" value="wrap-reverse" />
+                  wrap-reverse
+                </label>
+              </li>
+            </ul>
+          </li>
+          <!-- .shorthand -->
+
+          <li>
+            justify-content:
+            <label>
+              <input type="radio" name="justify-content" id="justify-content_flex-start" value="flex-start" checked />
+              flex-start
+            </label>
+            <label>
+              <input type="radio" name="justify-content" id="justify-content_flex-end" value="flex-end" />
+              flex-end
+            </label>
+            <label>
+              <input type="radio" name="justify-content" id="justify-content_center" value="center" />
+              center
+            </label>
+            <label>
+              <input type="radio" name="justify-content" id="justify-content_space-between" value="space-between" />
+              space-between
+            </label>
+            <label>
+              <input type="radio" name="justify-content" id="justify-content_space-around" value="space-around" />
+              space-around
+            </label>
+            <label>
+              <input type="radio" name="justify-content" id="justify-content_space-evenly" value="space-evenly" />
+              space-evenly
+            </label>
+          </li>
+
+          <li>
+            align-items:
+            <label>
+              <input type="radio" name="align-items" id="align-items_stretch" value="stretch" checked />
+              stretch
+            </label>
+            <label>
+              <input type="radio" name="align-items" id="align-items_flex-start" value="flex-start" />
+              flex-start
+            </label>
+            <label>
+              <input type="radio" name="align-items" id="align-items_start" value="start" />
+              start
+            </label>
+            <label>
+              <input type="radio" name="align-items" id="align-items_self-start" value="self-start" />
+              self-start
+            </label>
+            <label>
+              <input type="radio" name="align-items" id="align-items_flex-end" value="flex-end" />
+              flex-end
+            </label>
+            <label>
+              <input type="radio" name="align-items" id="align-items_end" value="end" />
+              end
+            </label>
+            <label>
+              <input type="radio" name="align-items" id="align-items_self-end" value="self-end" />
+              self-end
+            </label>
+            <label>
+              <input type="radio" name="align-items" id="align-items_center" value="center" />
+              center
+            </label>
+            <label>
+              <input type="radio" name="align-items" id="align-items_baseline" value="baseline" />
+              baseline
+            </label>
+          </li>
+
+          <li>
+            align-content:
+            <label>
+              <input type="radio" name="align-content" id="align-content_normal" value="normal" checked />
+              normal
+            </label>
+            <label>
+              <input type="radio" name="align-content" id="align-content_flex-start" value="flex-start" />
+              flex-start
+            </label>
+            <label>
+              <input type="radio" name="align-content" id="align-content_start" value="start" />
+              start
+            </label>
+            <label>
+              <input type="radio" name="align-content" id="align-content_flex-end" value="flex-end" />
+              flex-end
+            </label>
+            <label>
+              <input type="radio" name="align-content" id="align-content_end" value="end" />
+              end
+            </label>
+            <label>
+              <input type="radio" name="align-content" id="align-content_center" value="center" />
+              center
+            </label>
+            <label>
+              <input type="radio" name="align-content" id="align-content_space-between" value="space-between" />
+              space-between
+            </label>
+            <label>
+              <input type="radio" name="align-content" id="align-content_space-around" value="space-around" />
+              space-around
+            </label>
+            <label>
+              <input type="radio" name="align-content" id="align-content_space-evenly" value="space-evenly" />
+              space-evenly
+            </label>
+            <label>
+              <input type="radio" name="align-content" id="align-content_stretch" value="stretch" />
+              stretch
+            </label>
+          </li>
+
+          <li class="shorthand">
+            gap:
+            <ul class="option-list">
+              <li>
+                <label>
+                  row-gap:
+                  <input type="number" name="row-gap" id="row-gap" value="0" />
+                </label>
+              </li>
+              <li>
+                <label>
+                  column-gap:
+                  <input type="number" name="column-gap" id="column-gap" value="0" />
+                </label>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>Item properties</legend>
+
+        <ul class="options-list">
+          <li class="shorthand">
+            flex:
+
+            <ul class="options-list">
+              <li>
+                <label for="flex-grow">
+                  flex-grow:
+                  <label for="flex-grow-enabled" class="visually-hidden">Enable flex-grow</label>
+                  <input type="checkbox" name="flex-grow-enabled" id="flex-grow-enabled" />
+
+                  <input type="number" name="flex-grow" id="flex-grow" min="0" value="1" disabled />
+                </label>
+              </li>
+
+              <li>
+                <label for="flex-shrink">
+                  flex-shrink:
+                  <label for="flex-shrink-enabled" class="visually-hidden">Enable flex-shrink</label>
+                  <input type="checkbox" name="flex-shrink-enabled" id="flex-shrink-enabled" />
+                  <input type="number" name="flex-shrink" id="flex-shrink" min="0" value="1" disabled />
+                </label>
+              </li>
+
+              <li>
+                <label for="flex-basis">
+                  flex-basis:
+                  <label for="flex-basis-enabled" class="visually-hidden">Enable flex-basis</label>
+                  <input type="checkbox" name="flex-basis-enabled" id="flex-basis-enabled" />
+                  <input type="number" name="flex-basis" id="flex-basis" min="0" value="1" disabled />
+                </label>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </fieldset>
+
+      <button id="resetProperties">Reset</button>
+      <input type="submit" value="Try it!" />
+    </form>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
